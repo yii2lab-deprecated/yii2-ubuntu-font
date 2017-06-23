@@ -6,7 +6,7 @@
  * Time: 11:40 AM
  */
 
-namespace yii2lab\ubuntu_font;
+namespace yii2lab\ubuntu_font\assets;
 
 use yii\web\AssetBundle;
 
