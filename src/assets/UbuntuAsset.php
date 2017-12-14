@@ -16,7 +16,6 @@ class UbuntuAsset extends AssetBundle
 	public $css = [
 		'styles.css',
 	];
-	private $addonCss = '';
 	
 	function init() {
 		parent::init();
