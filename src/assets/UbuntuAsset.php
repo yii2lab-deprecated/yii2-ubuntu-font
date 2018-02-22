@@ -4,6 +4,7 @@ namespace yii2lab\ubuntu_font\assets;
 
 use yii\web\AssetBundle;
 use yii2lab\helpers\Helper;
+use yii2lab\helpers\yii\Html;
 
 class UbuntuAsset extends AssetBundle
 {
@@ -15,6 +16,6 @@ class UbuntuAsset extends AssetBundle
 	public function init()
     {
         parent::init();
-        Helper::setFont('ubuntu');
+        Html::setFont('ubuntu');
     }
 }
