@@ -1,13 +1,8 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: zein
- * Date: 8/2/14
- * Time: 11:40 AM
- */
 
 namespace yii2lab\ubuntu_font\assets;
 
+use Yii;
 use yii\web\AssetBundle;
 
 class UbuntuAsset extends AssetBundle
@@ -19,6 +14,13 @@ class UbuntuAsset extends AssetBundle
 	
 	function init() {
 		parent::init();
+		$css = '
+            html,
+            body {
+                font-family: ubuntu;
+            }
+        ';
+        Yii::$app->view->registerCss($css);
 	}
 	
 }
