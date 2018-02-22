@@ -2,8 +2,8 @@
 
 namespace yii2lab\ubuntu_font\assets;
 
-use Yii;
 use yii\web\AssetBundle;
+use yii2lab\helpers\Helper;
 
 class UbuntuAsset extends AssetBundle
 {
@@ -11,16 +11,10 @@ class UbuntuAsset extends AssetBundle
 	public $css = [
 		'styles.css',
 	];
-	
-	function init() {
-		parent::init();
-		$css = '
-            html,
-            body {
-                font-family: ubuntu;
-            }
-        ';
-        Yii::$app->view->registerCss($css);
-	}
-	
+
+	public function init()
+    {
+        parent::init();
+        Helper::setFont('ubuntu');
+    }
 }
