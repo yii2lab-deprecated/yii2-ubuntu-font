@@ -4,7 +4,7 @@ namespace yii2lab\ubuntu_font\assets;
 
 use yii\web\AssetBundle;
 use yii2lab\helpers\Helper;
-use yii2lab\helpers\yii\Html;
+use yii2lab\extension\yii\helpers\Html;
 
 class UbuntuAsset extends AssetBundle
 {
